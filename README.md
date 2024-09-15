@@ -85,3 +85,32 @@ GET /discord/users/{user.id}
 ```
 
 </details>
+
+## /images
+
+Free images storage limit 25 MB
+Support png, jpg, jpeg, gif, svg, webp
+
+```
+POST /images
+```
+
+<details>
+  <summary>Example Request</summary>
+
+| Field    | Type   | Description     |
+| -------- | ------ | --------------- |
+| image    | file   | Image to upload |
+| owner    | string | Owner ID        |
+| filename | string | Filename        |
+
+</details>
+<details>
+  <summary>Example Response</summary>
+
+```json
+{
+  "message": "Image uploaded successfully with ID 1",
+  "id": 1
+}
+```
