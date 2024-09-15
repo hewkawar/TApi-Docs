@@ -110,7 +110,20 @@ POST /images
 
 ```json
 {
-  "message": "Image uploaded successfully with ID 1",
-  "id": 1
+  "message": "Image uploaded successfully with ID 5",
+  "id": 5
 }
 ```
+
+</details>
+
+```
+GET /images/{image.id}
+```
+
+<details>
+  <summary>Example Response</summary>
+
+![Example Image](https://hewkawar.xyz/api/v1/images/5)
+
+</details>
