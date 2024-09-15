@@ -96,12 +96,12 @@ POST /images
 ```
 
 <details>
-  <summary>Example Request</summary>
+  <summary>Request Structure</summary>
 
 | Field    | Type   | Description     |
 | -------- | ------ | --------------- |
 | image    | file   | Image to upload |
-| owner    | string | Owner ID        |
+| owner    | string | Owner           |
 | filename | string | Filename        |
 
 </details>
@@ -125,5 +125,30 @@ GET /images/{image.id}
   <summary>Example Response</summary>
 
 ![Example Image](https://hewkawar.xyz/api/v1/images/5)
+
+</details>
+
+```
+DELETE /images/{image.id}
+```
+
+<details>
+  <summary>Request Structure</summary>
+
+| Field    | Type   | Description |
+| -------- | ------ | ----------- |
+| owner    | string | Owner       |
+| filename | string | Filename    |
+
+</details>
+
+<details>
+  <summary>Example Response</summary>
+
+```json
+{
+  "message": "Deleted image with ID 5"
+}
+```
 
 </details>
